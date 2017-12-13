@@ -1,0 +1,935 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ===========================
+   Header
+   ========================== */
+body{
+    background: url(../img/Background/5.jpg);
+    background-size:100%  100%;
+    background-attachment:fixed;
+}
+
+.full{
+    width:960px;
+    margin:0 auto
+}
+.headerBg{
+    height:183px;
+    width: 100%;
+    background: url(../img/back/1.jpg);
+    background-position:center;
+    background-size: cover;
+}
+.header {
+    width:100%;
+    height:183px;
+    background:rgba(20, 61, 96, 0.61)
+}
+.leftside{
+    width:50%;
+    overflow:hidden;
+    color:white;
+    float:left;
+}
+.leftside img{
+    float:left;
+    height:90px;
+    margin-top:20px;
+    margin-left:20px;
+    padding-right:15px
+}
+.leftside h1{
+    font-size:35px;
+    margin-top:30px
+}
+.leftside p{
+    font-size:18px
+}
+.rightside{
+    float:left;
+    width:48%;
+    margin-right:10px
+}
+.rightside a{
+    float:right;
+    font-size:25px;
+    padding:10px;
+    margin-left:15px;
+    margin-top:40px;
+    border-radius:50%;
+    color:white;
+    transition:.5s;
+    
+}
+.rightside a:hover{
+    margin-top: 30px;
+    transform:rotate(360deg)
+}
+.rightside a:nth-child(1){
+    padding:10px 16px;
+    background:#006CA2
+}
+.rightside a:nth-child(2){
+    padding:10px 12px;
+    background:#EB3E0C
+}
+.rightside a:nth-child(3){
+    padding:10px 16px;
+    background:#1483C1
+}
+.rightside a:nth-child(4){
+    padding:10px 20px;
+    background:#355697
+}
+.navbar{
+    width:100%;
+    float:left;
+    height:30px;
+    background:rgba(133, 201, 191, 0.55);
+    margin-top:20px
+}
+.navbar ul{
+    float:left;
+    margin-left:-40px
+}
+.navbar ul li {
+    float:left;
+    text-decoration:none;
+    list-style:none;
+    font-size:18px;
+    padding:5px 0px;
+    margin-top:6px;
+    margin-left:10px;
+    background:#123B3F;
+    transition:.5s;
+}
+.navbar ul li:hover{
+    background:rgba(204, 237, 232, 0.57);
+    
+}
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+       padding:8px 15px;
+    background:transparent;
+}
+.navbar ul li a:hover{
+    color: black
+}
+#activeMenu{
+    background:#B4D9D5;
+    color:black
+}
+/* ===========================
+   Slider
+   ========================== */
+.overflow{
+width:100%;
+overflow: hidden;
+height: 420px;
+position:relative;
+top:-20px
+}
+.slider {
+    width:100%;
+    height:400px;
+    position:relative;
+    color: white
+}
+.slider:before, .slider:after{
+
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 20px 17px #777;
+  transform: rotate(-3deg);
+}
+.slider:after{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+#slide1 {
+    width:100%;
+    height:100%;
+    background:url(../img/slider/two.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+}
+#slide1 h1{
+    color:white;
+    font-size:45px;
+    margin-left:25px;
+    margin-top:110px;
+    background:rgba(10, 33, 18, 0.67);
+    width:810px;
+     padding-left:10px;
+}
+#slide1 p{
+    color: rgb(255, 208, 168);
+    font-size:25px;
+    margin-left: 25px;
+    font-weight:bold;
+    background:rgba(20, 72, 38, 0.65);
+    width:810px;
+    padding-left:10px;
+    margin-top:45px
+}
+.aa{
+    animation-delay:.8s
+}
+.bb{
+    animation-delay:1.1s
+}
+#slide2{
+    width:100%;
+    height:100%;
+    background:url(../img/slider/three.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:none;
+      position:absolute;
+    text-align:center
+}
+#slide2 h1{
+    margin-top:150px;
+    font-size:50px;
+}
+#slide2 p{
+    margin-top:30px;
+    font-size:18px;
+}
+#slide3{
+    width:100%;
+    height:100%;
+    background:url(../img/slider/five.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:none;
+      position:absolute;
+    text-align: center
+}
+#slide3 h1{
+    margin-top:140px;
+    font-size:45px;
+    background: rgba(0, 0, 0, 0.65);
+    padding:10px 0px;
+    margin-bottom:40px
+}
+#slide3 p{
+     margin-top:20px;
+    font-size:15px;
+    background: rgba(0, 0, 0, 0.65);
+    padding:10px 0px;
+    width:500px;
+    margin:0 auto
+}
+#slide4{
+      width:100%;
+    height:100%;
+    background:url(../img/slider/one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:none;
+      position:absolute;
+    text-align: center
+}
+#slide4 h1{
+     margin-top:140px;
+    font-size:45px;
+    background: rgba(212, 212, 212, 0.69);
+    padding:10px 0px;
+    margin-bottom:40px;
+    color: black;
+    border:2px solid rgba(242, 242, 242, 0.77)
+}
+#slide4 p{
+     margin-top:20px;
+    font-size:15px;
+    background: rgba(212, 212, 212, 0.69);
+    padding:10px 0px;
+    width:500px;
+    margin:0 auto;
+      border:2px solid rgba(242, 242, 242, 0.77);
+    color:black;
+}
+/* ===========================
+   content
+   ========================== */
+.content{
+    width:100%;
+    overflow:hidden;
+    margin-top:-15px
+}
+.maincontent{
+    width:65%;
+    float: left;
+    overflow:hidden;
+    border:1px solid;
+    background:url(../img/back/2.jpg);
+    background-attachment:fixed;
+    position:relative;
+}
+.samePost{
+    width:100%;
+    height:450px;
+     padding-left:15px;
+    padding-right:35px;
+    position:relative;
+    z-index:2;
+    background:rgba(113, 177, 100, 0.63);
+    color: #fafafa;
+     -webkit-box-shadow: inset -1px 1px 25px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -1px 1px 25px 0px rgba(0,0,0,0.75);
+box-shadow: inset -1px 1px 25px 0px rgba(0,0,0,0.75);
+    margin-top:-20px
+}
+.samePost h1{
+color:white;
+padding-top:10px
+}
+.samePost hr{
+    height:2px;
+    background:#e0e0e0;
+    width:100%;
+    border:none
+}
+.image{
+    width:250px;
+    height:150px;
+    padding:5px;
+    background:white;
+    float:left;
+    margin-right:10px;
+    position: relative;
+    box-shadow:0 5px 6px rgba(0, 0, 0, 0.24), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.image:before, .image:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    box-shadow:0 2px 20px rgb(0, 0, 0);
+    top:-0px;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 30px;
+} 
+.image:after
+{
+    right:10px; 
+    left:auto; 
+    transform:skew(8deg) rotate(3deg);
+}
+.image img{
+    width: 100%;
+    height:100%
+}
+
+
+.samePost p{
+    text-align:justify;
+    font-size:17px
+}
+.samePost a{
+    text-decoration:none;
+    font-size:16px;
+    float:right;
+    border:1px solid;
+    padding:6px;
+    background:#0e8976;
+    color:white;
+    transition:.7s
+}
+.samePost a:hover{
+    background: black;
+    color:white
+}
+.samePost  span{
+  font-weight:bold;
+    color:#b6fcff;
+    font-size:15px;
+
+}
+.sidebar{
+    float:right;
+    width:32%;
+    text-align:center;
+}
+
+
+.sidebar h1{
+    margin-top:0px;
+    padding:7px;
+    background:#0e8976;
+    color:white
+}
+.sidebar ul{
+    list-style:none;
+}
+.sidebar ul li{
+    font-size:17px;
+    float: left;
+    text-align:center;
+    padding:8px 16px;
+    margin-top:8px;
+    margin-left:-10px;
+    background:rgb(255, 255, 255);
+    -webkit-box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+    border-radius:3px;
+    transition:.5s
+}
+.sidebar ul a{
+    text-decoration:none;
+    color:black;
+   padding:15px 0px;
+}
+.sidebar ul li:hover{
+     background:rgba(255, 255, 255, 0.29);
+      padding:8px 20px;
+}
+.sidebar ul  li a:hover{
+    color: white;
+}
+.sideBg{
+    width:100%;
+    height:324px;
+    background:url(../img/back/3.jpg);
+    background-attachment:fixed;
+   background-size: cover
+}
+
+.sameSide{
+    margin-top:40px;
+    background:rgba(9, 37, 49, 0.76);
+    height:324px;
+    color: white;
+    width:100%;
+    position: relative;
+}
+
+.sameSide:before, .sameSide:after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 20px 17px #4a4848;
+  transform: rotate(-3deg);
+}
+.sameSide:after{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.firstside{
+    margin-top:0px
+}
+
+.for{
+    width:100%;
+    height:270px;
+    border-left:40px solid rgba(17, 36, 17, 0.45);
+    border-right:40px solid rgba(17, 36, 17, 0.45);
+    border-top: 20px solid rgba(96, 142, 123, 0.41);
+    border-bottom: 35px solid rgba(96, 142, 123, 0.41);
+    margin-top:-10px
+}
+.for ul li {
+    width:200px;
+    margin-left:-25px;
+    margin-top:11px
+}
+.for ul li:nth-child(1) a{
+    padding:10px 70px;
+    margin-left:-18px
+}
+.for ul li:nth-child(2) a{
+    padding:10px 56px;
+    margin-left:-15px
+}
+.for ul li:nth-child(3) a{
+    padding:10px 46px;
+    margin-left:-15px
+}
+.for ul li:nth-child(4) a{
+    padding:10px 75px;
+    margin-left:-15px
+}
+
+.meta ul li:nth-child(1) a{
+    padding:10px 0px;
+    padding-right:65px;
+    margin-left: -15px;
+}
+.meta ul li:nth-child(2) a{
+    padding:10px 0px;
+    margin-left:-15px;
+     padding-right:90px;
+}
+.meta ul li:nth-child(3) a{
+    padding:10px 0px;
+    margin-left:-15px;
+      padding-right:56px;
+}
+.meta ul li:nth-child(4) a{
+    padding:10px 0px;
+    margin-left:-15px;
+      padding-right:35px;
+}
+
+/* ===========================
+   footer
+   ========================== */
+.footer{
+    width:100%;
+    height:300px;
+    background:url(../img/Footer/3.jpeg);
+   margin-top:20px;
+    position:relative;
+    z-index:2
+}
+.shadow{
+    width:100%;
+    height:100%;
+    background:rgba(206, 206, 206, 0.29)
+}
+.footerMenu{
+    float: left
+}
+.copy{
+    height:240px;
+    width:420px;
+    float:right;
+    margin-right:30px;
+    position:relative;
+    margin-top:37px;
+    background:url(../img/back/3.jpg);
+    background-size: cover;
+    border:8px solid rgb(226, 226, 226)
+}
+.copy:before,.copy:after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 27px 17px rgba(0, 0, 0, 0.89);
+  transform: rotate(-7deg);
+}
+.copy:after{
+  transform: rotate(7deg);
+  right: 10px;
+  left: auto;
+}
+.copyRight{
+    width:100%;
+    height:100%;
+    background:rgba(13, 51, 42, 0.78);
+    position:relative;
+}
+.copyRight img{
+    width:120px;
+    height:65px;
+    float:left;
+    margin-left:140px;
+    margin-top:20px
+}
+.copyRight h1{
+    color: white;
+    padding-left:100px;
+   margin-top:0px;
+    text-align:center;
+    float:left;
+    text-align: center;
+    padding-top:10px
+}
+.copyRight p{
+    text-align: center;
+    width:100%;
+    color:white;
+    font-size:16px;
+    padding-top:px;
+    float:left
+}
+.copyRight p span{
+    padding-right:5px;
+    font-size:25px;
+    position:relative;
+    top: 3px
+}
+
+
+.footerMenu{
+    background:rgba(255, 255, 255, 0.48);
+    width:450px;
+    height:130px;
+    position:absolute;
+    margin-top:95px;
+    margin-left:30px;
+    z-index:5;
+   -webkit-box-shadow: inset 2px 0px 20px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 2px 0px 20px 5px rgba(0,0,0,0.75);
+box-shadow: inset 2px 0px 20px 5px rgba(0,0,0,0.75);
+}
+.footerMenu ul{
+    float: left;
+    width: 100%;
+}
+.footerMenu ul li{
+    float: left;
+  list-style:none;
+    margin-top:50px;
+    margin-left:10px;
+}
+.footerMenu ul li a{
+    color:black;
+    font-size:18px;
+    text-decoration:none;
+    padding:13px 13px;
+    background:rgba(255, 255, 255, 0.63);
+     -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+     transition:.7s;
+}
+.footerMenu ul li a:hover{
+    color: white;
+    background:#000000
+}
+#activeMenufo{
+    color: white;
+    background:#000000
+}
+
+/*-------------------Scroll-------------------*/
+
+.animateScroll{
+    width:50px;
+    height:47px;
+    float: right;
+    position:fixed;
+    margin-top:810px;
+    margin-left:1170px;
+    border-radius:50%;
+    cursor:pointer;
+ -webkit-box-shadow: 1px 20px 39px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 20px 39px -6px rgba(0,0,0,0.75);
+box-shadow: 1px 20px 39px -6px rgba(0,0,0,0.75);
+    transition:.5s;
+    display:none;
+}
+.animateScroll:hover{
+     margin-top:800px;
+}
+.animateScroll img{
+    width:70px;
+    height:60px;
+    margin-left:-11px
+}
+
+
+#loading{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background:#E4F0F0;
+    z-index: 99999;
+    width:100%;
+    text-align:center;
+}
+#loading img{
+    position:relative;
+    width:60%;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+

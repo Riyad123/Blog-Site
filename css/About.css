@@ -1,0 +1,25 @@
+.about{
+    height:1300px;
+    text-align: center;
+}
+.image{
+    width:450px;
+    float:left;
+    overflow:hidden;
+    height:350px;
+    margin-top:40px
+}
+.about p{
+    margin-top: 50px
+}
+.headerBg{
+   box-shadow: -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+hr{
+    margin-top:25px
+}
+.about h1{
+    padding-top:20px
+}

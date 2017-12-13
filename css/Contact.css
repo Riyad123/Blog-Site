@@ -1,0 +1,87 @@
+.headerBg{
+   box-shadow: -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.contact{
+    height:700px;
+    text-align: center;
+}
+.ContactCon{
+    position:relative;
+}
+.formSec{
+    margin-top:40px
+}
+.formSec p{
+    font-size:17px;
+    width:100%;
+    font-weight:bold;
+    margin-top:40px
+}
+.formSec input{
+    height:50px;
+    color:black;
+      background:rgb(255, 255, 255);
+    -webkit-box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+ border:none;
+    text-indent:20px;
+    font-weight:100;
+    margin-left:10px
+}
+#email input{
+    width:330px;
+    margin-left:60px
+}
+#addres input{
+    width:330px;
+    margin-left:27px
+}
+#submit{
+    text-indent:0px;
+    padding:5px 30px;
+    height:50px;
+    background:#0E8976;
+    color:white;
+    font-size:18px;
+    -webkit-box-shadow: -1px 11px 40px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 11px 40px -8px rgba(0,0,0,0.75);
+box-shadow: -1px 11px 40px -8px rgba(0,0,0,0.75);
+    transition:.5s;
+    margin-top:40px;
+    float:left;
+    margin-left:250px
+}
+#submit:hover{
+    background:black;
+}
+textarea{
+    margin-left:36px;
+    width:326px;
+    height:170px;
+    color:black;
+    float: left;
+    font-size:20px;
+    text-indent:10px;
+    -webkit-box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 44px -5px rgba(0,0,0,0.75);
+    margin-top: 35px
+}
+#address{
+    float: left;
+    width:120px
+}
+
+
+
+
+
+.contact h1{
+    padding-top:40px
+}
+hr{
+    margin-top:30px
+}
